@@ -1,0 +1,19 @@
+[project]
+name = "s3pq"
+version = "0.1.0"
+description = "A CLI to process S3 Parquet queries with PySpark"
+readme = "README.md"
+authors = [
+    { name="Param", email="param@dl.software" }
+]
+dependencies = [
+    "pyspark>=3.5.0"
+]
+requires-python = ">=3.12"
+
+[project.urls]
+Homepage = "https://github.com/paramsehdl/s3pq"
+Issues = "https://github.com/paramsehdl/s3pq/issues"
+
+[project.scripts]
+s3pq = "s3pq.cli:main"
